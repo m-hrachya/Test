@@ -1,0 +1,11 @@
+1. dotnet new webapi -o api
+2. cd api && dotnet watch run (localhost:XXXX/swaggeer/index.html)
+3. Extensions: C# Dev Kit, C#, .Net Install Tool, .Net Extension Pack, Prettier, NuGet Gallery, C# Extension by JosKreativ
+4. Models for each table
+5. Microsoft.EntityFrameworkCore.SqlServer, .Tools, .Design (with NuGet Gallery)
+6. DbContext -> ApplicationDbContext{dbContextOPtions} : base(...) (Data)
+7. DbSet<Each Model> sets
+8. builder.Services.AddEndpointsApiExplorer(), AddSwaggerGen(), .AddDbContext<AplicationDBContext>(options =>
+	options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+9. appsettings.json + connectionstring
+10. add controllers + interface + ...
